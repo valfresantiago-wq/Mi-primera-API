@@ -21,5 +21,5 @@ def inicio():
 def productos():
     return [
         {"id": 1, "nombre": "Resma A4", "precio": 6000},
-        {"id": 2, "nombre": "Lapicera", "precio": 999,99}
+        {"id": 2, "nombre": "Lapicera", "precio": 999.99}
     ]
