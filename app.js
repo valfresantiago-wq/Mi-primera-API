@@ -1,18 +1,13 @@
-fetch("https://mi-primera-api-zr0v.onrender.com/productos")
-    .then(respuesta => respuesta.json())
-    .then(productos => {
+// Mensaje en consola
+console.log('App cargada correctamente');
 
-        const contenedor = document.getElementById("productos");
-
-        productos.forEach(producto => {
-
-            contenedor.innerHTML += `
-                <div class="producto">
-                    <h2>${producto.nombre}</h2>
-                    <p>Precio: $${producto.precio}</p>
-                </div>
-            `;
-
+// Esperar a que el DOM esté listo
+document.addEventListener('DOMContentLoaded', function() {
+    const boton = document.getElementById('miBoton');
+    
+    if (boton) {
+        boton.addEventListener('click', function() {
+            alert('¡Botón clickeado!');
         });
-
-    });
+    }
+});
