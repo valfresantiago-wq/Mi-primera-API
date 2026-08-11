@@ -1,4 +1,4 @@
-const API_URL = "https://tu-app-en-render.onrender.com";
+const API_URL = "https://mi-primera-api-zr0v.onrender.com";
 
 document.addEventListener('DOMContentLoaded', function() {
     cargarProductos();
